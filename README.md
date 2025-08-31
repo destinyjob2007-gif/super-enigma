@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #333;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website 🌍</h1>
+    <p>A simple HTML + CSS + JS site</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container" id="home">
+    <div class="card">
+      <h2>Home</h2>
+      <p>This is my very first website. I built it using HTML, CSS, and JavaScript. 🚀</p>
+    </div>
+
+    <div class="card" id="about">
+      <h2>About Me</h2>
+      <p>Hello! My name is Destiny 😎. I am learning web development. This site is a demo of what I can build with simple code.</p>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me on:</p>
+      <ul>
+        <li>Email: example@email.com</li>
+        <li>WhatsApp: +234-xxx-xxx-xxxx</li>
+      </ul>
+      <button onclick="showAlert()">Click Me</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 My First Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showAlert() {
+      alert("Thanks for visiting my website 🚀");
+    }
+  </script>
+</body>
+</html>
